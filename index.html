@@ -1,90 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+  <head>
+​
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+​
+    <title>CTA analysis</title>
+​
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+​
+  </head>
+​
+  <body>
+    <!-- Start of navbar -->
+	<div class="navigation">
+	  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Chicago CTA Analysis</a>
+        <button class="navbar-toggler border" type="button" data-toggle="collapse" 
+        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" 
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+​
+        <!-- Navigation links from other html's in the folder -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="vicinity.html">Neighboorhood Station Rides</a>
+                <a class="dropdown-item" href="overall.html">Overall Rides</a>
+                <a class="dropdown-item" href="weekday.html">Average Weekday Rides</a>
+                <a class="dropdown-item" href="weekends.html">Average Weekend Rides </a>
+              </div>
+            </li>
 
-<head>
-  <meta charset="UTF-8">
-  <title>CSS Review</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-
-  <div class="container">
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Portfolio</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-      <select id="nav-select">
-        <option value="home">Home</option>
-        <option value="about">About</option>
-        <option value="portfolio">Portfolio</option>
-        <option value="contact">Contact</option>
-      </select>
-      <div class="clearfix"></div>
-    </nav>
-    <header class="header">
-      <h1>Welcome</h1>
-    </header>
-    <main>
-      <section class="posts">
-        <article class="post">
-          <h3>Ut nulla exercitation ad eu et amet nisi dolor.</h3>
-          <p>Nisi quis consectetur excepteur cillum dolor minim. Reprehenderit do qui veniam dolor in ea cupidatat eiusmod ad adipisicing nulla officia dolor sit. Anim fugiat eu enim in ex est deserunt laborum commodo incididunt consectetur consectetur.
-            Ullamco nulla nulla cillum elit reprehenderit officia magna excepteur. Fugiat occaecat veniam eu amet veniam tempor fugiat magna exercitation amet veniam mollit pariatur. Minim adipisicing cupidatat est do est id ex reprehenderit quis enim
-            elit consectetur sint.
-          </p>
-        </article>
-        <article class="post">
-          <h3>Ut nulla exercitation ad eu et amet nisi dolor.</h3>
-          <p>Nisi quis consectetur excepteur cillum dolor minim. Reprehenderit do qui veniam dolor in ea cupidatat eiusmod ad adipisicing nulla officia dolor sit. Anim fugiat eu enim in ex est deserunt laborum commodo incididunt consectetur consectetur.
-            Ullamco nulla nulla cillum elit reprehenderit officia magna excepteur. Fugiat occaecat veniam eu amet veniam tempor fugiat magna exercitation amet veniam mollit pariatur. Minim adipisicing cupidatat est do est id ex reprehenderit quis enim
-            elit consectetur sint.
-          </p>
-        </article>
-        <article class="post">
-          <h3>Ut nulla exercitation ad eu et amet nisi dolor.</h3>
-          <p>Nisi quis consectetur excepteur cillum dolor minim. Reprehenderit do qui veniam dolor in ea cupidatat eiusmod ad adipisicing nulla officia dolor sit. Anim fugiat eu enim in ex est deserunt laborum commodo incididunt consectetur consectetur.
-            Ullamco nulla nulla cillum elit reprehenderit officia magna excepteur. Fugiat occaecat veniam eu amet veniam tempor fugiat magna exercitation amet veniam mollit pariatur. Minim adipisicing cupidatat est do est id ex reprehenderit quis enim
-            elit consectetur sint.
-          </p>
-        </article>
-        <article class="post">
-          <h3>Ut nulla exercitation ad eu et amet nisi dolor.</h3>
-          <p>Nisi quis consectetur excepteur cillum dolor minim. Reprehenderit do qui veniam dolor in ea cupidatat eiusmod ad adipisicing nulla officia dolor sit. Anim fugiat eu enim in ex est deserunt laborum commodo incididunt consectetur consectetur.
-            Ullamco nulla nulla cillum elit reprehenderit officia magna excepteur. Fugiat occaecat veniam eu amet veniam tempor fugiat magna exercitation amet veniam mollit pariatur. Minim adipisicing cupidatat est do est id ex reprehenderit quis enim
-            elit consectetur sint.
-          </p>
-        </article>
-        <article class="post">
-          <h3>Ut nulla exercitation ad eu et amet nisi dolor.</h3>
-          <p>Nisi quis consectetur excepteur cillum dolor minim. Reprehenderit do qui veniam dolor in ea cupidatat eiusmod ad adipisicing nulla officia dolor sit. Anim fugiat eu enim in ex est deserunt laborum commodo incididunt consectetur consectetur.
-            Ullamco nulla nulla cillum elit reprehenderit officia magna excepteur. Fugiat occaecat veniam eu amet veniam tempor fugiat magna exercitation amet veniam mollit pariatur. Minim adipisicing cupidatat est do est id ex reprehenderit quis enim
-            elit consectetur sint.
-          </p>
-        </article>
-        <article class="post">
-          <h3>Ut nulla exercitation ad eu et amet nisi dolor.</h3>
-          <p>Nisi quis consectetur excepteur cillum dolor minim. Reprehenderit do qui veniam dolor in ea cupidatat eiusmod ad adipisicing nulla officia dolor sit. Anim fugiat eu enim in ex est deserunt laborum commodo incididunt consectetur consectetur.
-            Ullamco nulla nulla cillum elit reprehenderit officia magna excepteur. Fugiat occaecat veniam eu amet veniam tempor fugiat magna exercitation amet veniam mollit pariatur. Minim adipisicing cupidatat est do est id ex reprehenderit quis enim
-            elit consectetur sint.
-          </p>
-        </article>
-      </section>
-    </main>
+          </li>
+          <li class="nav-item">
+      <a class="nav-link" href="comparison.html">Comparison</a>
+    </li>
+            <li class="nav-item dropdown">
+                <a href='#' class= "nav-link dropdown-toggle" 
+                data-toggle="dropdown" id="navbarDropdownMenuLink" 
+                role="button" aria-haspopup="true" aria-expanded="false">Data</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="Resources/L_Rides.html">L-Rides</a>
+                    <a class="dropdown-item" href="Resources/stop_list.html">List of Stops</a>
+                </div>  
+              </li>
+          
+        </div>
+      </nav>
   </div>
+    <!-- End of navbar -->
+​
+  <!-- Start of container -->
+    <div class="container">
+      <section class="row">
+        <div class="col-lg-7 col-md-12">
+          <div class="description-content">
+            <h1 class="description-header">Summary: CTA Analysis </h1>
+            <hr>
+            <img src="Resources/assets/Images/CTA_map.png" alt="CTA L-Map" 
+            class="description-image">
+            
+            <p> The City of Chicago provides a huge amount of open data for to explore though the 
+               <a href= "https://data.cityofchicago.org/"> Chicago Data Portal </a>.
+              </p>
+             <p>The purpose of this project was to analyze the flux of passengers over a certain period of time
+              to answer the questions below:</p>
+              <p> 1) Which of the stations in my neighboorhood are more popular?</p>
+              <p> 2) What are the most popular stations overall (and least popular)?</p>
+              <p> 3) What part of the city has the most ridership?</p>
+              <p> 4) Are there any interesting trends in ridership I can see over time?</p>
 
-</body>
+            <p> This project is a modification of a <a 
+              href="https://towardsdatascience.com/exploring-and-visualizing-chicago-transit-data-using-pandas-and-bokeh-part-i-intro-to-pandas-5d6caa8813ef"
+            >Medium post</a> on CTA rides.</p>
+            </p> After assembling the datasets, I used gmaps with heatmap layer to plot the density of CTA riders. 
+              Factors we looked at included: <b>overall number of passengers per station</b> and <b>average weekend and weekdays rides</b>. 
+              This site provides the source data and visualizations created as part of the analysis.
+            </p>
+            </div>
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <!-- Start of Visualizations imageNav Area -->
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="imageNav-header">Visualizations</h2>
+              <hr />
+              <div class="container">
+			    <div class="row">
+				  <div class="col-6">
+                    <a href="vicinity.html">
+              <img src="Resources/assets/images/vicinity.png" alt="Neighboorhood Station", 
+              title="Neighboorhood Station" class="imageNav-photo">
+				    </a>
+				  </div>
+				  <div class="col-6">
+                    <a href="overall.html">
+				      <img src="Resources/assets/images/overall.png" alt="Overall ", title="Overal Riders" class="imageNav-photo">
+			        </a>
+                    </div>
+				  <div class="col-6">
+                    <a href="weekday.html">
+				      <img src="Resources/assets/images/averageweekday.png" alt="Average Weekday Rides", title="Average Weekday Rides", class="imageNav-photo">
+				    </a>
+				  </div>
+				  <div class="col-6">
+                    <a href="weekends.html">
+				      <img src="Resources/assets/images/averageweekend.png" alt="Average Weekend Rides", title="Average Weekend Rides", class="imageNav-photo">
+				    </a>
+				  </div>
+                </div>
+			  </div>
+            </div>
+          </section>
+          <!-- End of the Visualizations imageNav Area -->
+​
+        </div>
+      </section>
+    </div>
+    <!-- End of container -->
+​
+    <!-- Start of footer -->
+    <footer>
+      <div class="footer">&copy; rmsreis 2019</div>
+    </footer>
+    <!-- End of footer -->
+​
 
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+​
 </html>
